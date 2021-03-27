@@ -1,1 +1,7 @@
 source 'https://rubygems.org'
+gem 'rake'
+gem 'asciidoctor'
+gem 'asciidoctor-pdf'
+gem 'json'
+gem 'asciidoctor-bibtex'
+gem 'asciidoctor-mathematical'

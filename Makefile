@@ -43,6 +43,7 @@ rootfs: base.tar.gz profile
 	sudo cp -f profile rootfs/etc/profile
 	sudo cp -f .profile rootfs/root/.profile
 	sudo cp -f Gemfile rootfs/root/Gemfile
+	sudo cp -f Rakefile rootfs/root/Rakefile
 	sudo touch -f rootfs/root/.new
 	sudo chroot rootfs /sbin/apk update
 	sudo chroot rootfs /sbin/apk add bash
