@@ -3,6 +3,7 @@ if [ -e /root/.new ]; then
 	apk add --no-cache ruby
 	apk add ruby-dev make musl-dev gcc -t etc-build
 	gem install --no-user-install etc bundle
+	bundle install
 	apk del --purge etc-build
 	rm -rf /root/.new
 fi
